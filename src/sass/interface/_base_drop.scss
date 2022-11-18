@@ -1,0 +1,197 @@
+@mixin drop($font-s, $font-m) {
+  .drop-item {
+    font-size: $font-m;
+
+    .drop-item-control {
+      background-color: $color-blue;
+      padding: 15px 30px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-out;
+
+      .drop-item-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+      }
+    }
+
+    .drop-item-control:hover {
+      filter: brightness(1.2);
+    }
+
+    .drop-info-wrap {
+      background-color: $color-white;
+      color: $color-dark;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      grid-gap: 30px;
+      align-items: center;
+      height: 0px;
+      padding: 0 30px;
+      visibility: hidden;
+      transition: all 0.5s ease-out;
+      margin-bottom: 20px;
+      box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+
+      .drop-info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .drop-info-more {
+          color: inherit;
+          display: grid;
+          grid-template-columns: max-content max-content;
+          grid-gap: 15px;
+
+          span {
+            margin-right: 5px;
+
+            i {
+              color: $color-red;
+            }
+
+            a {
+              text-decoration: none;
+              font-family: inherit;
+              color: inherit;
+            }
+
+            a:hover {
+              color: $color-red;
+            }
+          }
+        }
+
+        .drop-info-para-container {
+          margin-top: 20px;
+          margin-bottom: 30px;
+
+          .drop-info-para {
+            text-align: justify;
+            line-height: 1.75;
+          }
+        }
+
+        // .drop-info-programs {
+        //   .drop-info-programs-list {
+        //     padding: 0;
+        //     list-style: none;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     grid-gap: 10px;
+
+        //     .drop-info-programs-item {
+        //       padding: 10px;
+        //       background-color: $color-dark;
+        //       color: $color-white;
+        //       border-radius: 20px;
+        //       font-size: $font-s;
+        //     }
+        //   }
+        // }
+      }
+
+      .drop-info-img-container {
+        min-width: 140px;
+        max-width: 200px;
+
+        .drop-info-img {
+          width: 100%;
+        }
+      }
+    }
+
+    .drop-visibly {
+      height: 270px;
+      visibility: visible;
+      padding: auto 30px;
+      margin: 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @include drop($font-s: 0.75rem, $font-m: 1rem);
+
+  .drop-item {
+    .drop-item-control {
+      .drop-item-title {
+        display: flex;
+        width: 80%;
+
+        .drop-date {
+          display: none;
+        }
+      }
+    }
+
+    .drop-info-wrap {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      .drop-info-text {
+        width: 100%;
+
+        .drop-info-more {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 0;
+        }
+
+        .drop-info-para-container {
+          .drop-info-para {
+            text-align: justify;
+          }
+        }
+
+        .drop-info-programs {
+          .drop-info-programs-list {
+            .drop-info-programs-item {
+              padding: 10px;
+            }
+          }
+        }
+      }
+
+      .drop-info-img-container {
+        .drop-info-img {
+          width: 100%;
+        }
+      }
+    }
+
+    .drop-visibly {
+      height: 625px;
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  @include drop($font-s: 0.75rem, $font-m: 1rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include drop($font-s: 1rem, $font-m: 1.5rem);
+
+  .drop-item {
+    .drop-info-wrap {
+      grid-gap: 50px;
+    }
+
+    .drop-visibly {
+      height: 350px;
+      padding: 40px;
+      margin: 30px 0;
+    }
+  }
+}

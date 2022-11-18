@@ -1,0 +1,120 @@
+@mixin btn($font-m) {
+  .btn-container {
+    font-size: $font-m;
+    height: 100%;
+
+    .btn {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      position: relative;
+      overflow: hidden;
+      color: $color-white;
+      font-size: inherit;
+      font-family: inherit;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .btn-default {
+      padding: 15px 30px;
+      background-color: $color-white;
+      color: $color-dark;
+      width: auto;
+      border-radius: $radius-s;
+      font-weight: 500;
+      box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.2);
+      width: 100%;
+    }
+
+    .btn-disabled {
+      opacity: 0.7;
+      pointer-events: none;
+      background-color: $color-white !important;
+      color: $color-dark !important;
+      box-shadow: none !important;
+    }
+
+    .btn-flat {
+      background-color: transparent;
+    }
+
+    .btn-header {
+      padding: 0;
+
+      background-color: transparent;
+
+      a {
+        height: 100%;
+        padding: 0 10px;
+        transition: all 0.3s;
+      }
+
+      .selected {
+        background-color: $color-third;
+      }
+
+      a:hover {
+        color: $color-third;
+      }
+
+      .selected:hover {
+        color: $color-white;
+      }
+    }
+
+    .btn-small {
+      // padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: solid 1px $color-white;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @include btn($font-m: 1rem);
+
+  .btn-container {
+    .btn-small {
+      i {
+        font-size: $font-s;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  @include btn($font-m: 1rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include btn($font-m: 1.5rem);
+
+  .btn-container {
+    .btn-small {
+      height: 45px;
+      width: 45px;
+    }
+  }
+}

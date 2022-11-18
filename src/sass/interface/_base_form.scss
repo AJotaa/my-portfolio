@@ -1,0 +1,93 @@
+@mixin form($font-m) {
+  .base-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+
+      .form-input {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: $radius-s;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: solid 2px rgba(255, 255, 255, 0.6);
+        outline: none;
+        font-family: inherit;
+        font-weight: 700;
+        color: $color-dark;
+        font-size: $font-m;
+        transition: all 0.3s ease-out;
+      }
+
+      .not-valid {
+        border-color: $color-red;
+        background-color: #db546233;
+        // background-color: red;
+      }
+
+      ::placeholder {
+        color: $color-white;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: $font-m;
+        opacity: 0.9;
+      }
+
+      .form-input:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-color: rgba(255, 255, 255);
+      }
+
+      .form-input:focus {
+        background-color: $color-white;
+        border-color: $color-blue;
+      }
+
+      :focus::placeholder {
+        color: $color-grey;
+      }
+    }
+    .large-container {
+      grid-column: 1 / 3;
+
+      .form-text-msg {
+        resize: none;
+        overflow: hidden;
+      }
+    }
+
+    .form-btn-container {
+      margin-top: 15px;
+
+      .btn:hover {
+        // background-color: $color-dark;
+        // background: linear-gradient(90deg, $color-blue, $color-red);
+        // color: $color-white;
+        transform: scale(0.97);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @include form($font-m: 1rem);
+
+  .base-form {
+    display: flex;
+    flex-direction: column;
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+}}}
+
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  @include form($font-m: 1rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include form($font-m: 1.5rem);
+}

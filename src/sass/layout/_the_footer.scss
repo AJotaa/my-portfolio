@@ -1,0 +1,38 @@
+@mixin footer($font-m, $layout-height) {
+.the-footer {
+  height: $layout-height;
+  background: linear-gradient(90deg, $color-blue, $color-red);
+  position: relative;
+
+  .footer-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-grey;
+
+    .footer-title {
+      font-weight: 500;
+      z-index: 1;
+      font-size: $font-m;
+      text-align: center;
+    }
+  }
+}
+}
+
+@media screen and (max-width: 700px) {
+  @include footer($font-m: 1rem, $layout-height: 4rem);
+
+  .the-footer {
+    background: $color-red;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  @include footer($font-m: 1rem, $layout-height: 4rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include footer($font-m: 1.5rem, $layout-height: 6rem);
+}

@@ -1,0 +1,23 @@
+.base-badge-container {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+
+  .base-badge-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    width: max-content;
+    min-width: 100%;
+
+    .base-badge-item {
+      padding: 10px;
+      border-radius: 20px;
+      min-width: 42px;
+      text-align: center;
+      font-family: $font-para;
+    }
+  }
+}

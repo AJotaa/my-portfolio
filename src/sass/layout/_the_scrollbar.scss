@@ -1,0 +1,37 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1.3vw;
+  min-width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  // border: solid 3px white;
+  
+}
+
+::-webkit-scrollbar-track:hover {
+  background: $color-light-dark;
+  // border: solid 3px white;
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-grey;
+  border-radius: 20px;
+  border: solid 3px $color-dark;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $color-white;
+  border: solid 3px $color-light-dark;
+}
+
+@media screen and (max-width: 700px) {
+  ::-webkit-scrollbar-thumb {
+    border: none;
+  }
+}

@@ -1,0 +1,71 @@
+@mixin experience($font-xl) {
+  .experience-section {
+    padding-bottom: 20vh;
+    position: relative;
+    background-color: $color-dark;
+
+    .expertice-section-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: inherit;
+
+      .experience-title-container {
+        margin-bottom: 40px;
+
+        .experience-title {
+          font-size: $font-xl;
+          text-align: center;
+        }
+      }
+
+      .experience-list-container {
+        width: 80%;
+        min-width: 650px;
+
+        .experience-list {
+          list-style: none;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @include experience($font-xl: 2.5rem);
+
+  .experience-section {
+    padding-bottom: 15vh;
+
+    .expertice-section-container {
+      .experience-list-container {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  @include experience($font-xl: 3rem);
+
+  .experience-section {
+    padding-bottom: 10vh;
+
+    .expertice-section-container {
+      .experience-list-container {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  @include experience($font-xl: 3rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include experience($font-xl: 4rem);
+}

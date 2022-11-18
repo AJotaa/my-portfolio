@@ -1,0 +1,156 @@
+@mixin skills($font-m, $font-l, $font-xl) {
+  .skills-section {
+    position: relative;
+    // height: 100vh;
+    background-color: $color-dark;
+    background: linear-gradient($color-blue 0%, $color-dark 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0 25vh 0;
+    // padding-bottom: 10vh;
+    // margin-top: -10vh;
+
+    .skills-section-container {
+      min-height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .skills-title {
+        font-size: $font-xl;
+        text-align: center;
+        padding-bottom: 20px;
+        z-index: 1;
+      }
+
+      .skills-info-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
+        padding: 0;
+        list-style: none;
+        // height: 100%;
+        // position: absolute;
+        top: 0;
+        margin: auto;
+        // height: 100%;
+        width: 100%;
+        // background-color: $color-white;
+        border-radius: 60px;
+        z-index: 1;
+
+        .skills-info-item {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          background-color: $color-dark;
+          text-align: justify;
+          padding: 20px 0;
+          z-index: 1;
+          // position: relative;
+
+          .skills-item-container {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+            grid-gap: 40px;
+            height: 100%;
+            width: 60%;
+            // min-width: 250px;
+            margin: auto;
+            padding-bottom: 30px;
+            position: relative;
+
+            .skills-item-title-contianer {
+              display: flex;
+              position: relative;
+              align-items: center;
+
+              .skills-item-title-logo {
+                color: #414141;
+                font-size: 4.5rem;
+                position: absolute;
+                transition: 0.3s ease-out all;
+              }
+
+              .skills-item-title {
+                z-index: 1;
+                text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+                margin-left: 50px;
+                font-size: $font-l;
+              }
+            }
+
+            .skills-item-para-container {
+              color: $color-grey;
+
+              .skills-item-para {
+                font-size: $font-m;
+                line-height: 1.75;
+              }
+            }
+
+            // .skills-item-badges {
+            //   position: absolute;
+            //   // top: 100%;
+            //   width: 100%;
+            //   overflow: hidden;
+            //   cursor: grab;
+            //   // border-radius: 100px;
+            // }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @include skills($font-m: 1rem, $font-l: 1.5rem, $font-xl: 2.5rem);
+
+  .skills-section {
+    padding-bottom: 15vh;
+
+    .skills-section-container {
+      .skills-info-list {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 50px;
+
+        .skills-info-item {
+          width: auto;
+          margin: 0 40px;
+          border: none !important;
+
+          .skills-item-container {
+            grid-template-rows: auto auto;
+            width: 100%;
+
+            .skills-item-badges {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  @include skills($font-m: 1rem, $font-l: 1.5rem, $font-xl: 3rem);
+  .skills-section {
+    padding-bottom: 20vh;
+
+    .skills-item-badges {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1500px) {
+  @include skills($font-m: 1rem, $font-l: 1.5rem, $font-xl: 3rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include skills($font-m: 1.5rem, $font-l: 2rem, $font-xl: 4rem);
+}

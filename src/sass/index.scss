@@ -1,0 +1,24 @@
+// Default
+@import "variables";
+@import "default";
+
+// HomePage
+@import "./home_page/hero_section";
+@import "./home_page/skills_section";
+@import "./home_page/projects_section";
+@import "./home_page/experience_section";
+@import "./home_page/contact_section";
+
+//Layout
+@import "./layout/the_header";
+@import "./layout/the_footer";
+@import "./layout/the_scrollbar";
+
+// Interface
+@import "./interface/base_button";
+@import "./interface/base_card";
+@import "./interface/base_drop";
+@import "./interface/base_form";
+@import "./interface/base_alert";
+@import "./interface/base_drop_list";
+@import "./interface/base_badge_list";
