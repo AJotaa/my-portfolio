@@ -7,12 +7,12 @@ import SkillsSection from "../components/home/SkillsSection";
 import HeroSection from "../components/home/HeroSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 
-import imgMovie from "../img/movies-app.png";
-import imgPomodoro from "../img/pomodoro-clock.png";
-import imgCalculator from "../img/calculator.png";
-import imgAtrolle from "../img/astrolle.png";
-import imgQuiz from "../img/country-quiz.png";
-import imgExp1 from "../img/agrimanager.png";
+import imgMovie from "../img/projects/movies-app.png";
+import imgPomodoro from "../img/projects/pomodoro-clock.png";
+import imgCalculator from "../img/projects/calculator.png";
+import imgAtrolle from "../img/projects/astrolle.png";
+import imgQuiz from "../img/projects/country-quiz.png";
+import imgExp1 from "../img/experience/agrimanager.png";
 
 class HomePage extends Component {
   constructor(props) {

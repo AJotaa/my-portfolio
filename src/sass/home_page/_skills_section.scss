@@ -1,15 +1,12 @@
 @mixin skills($font-m, $font-l, $font-xl) {
   .skills-section {
     position: relative;
-    // height: 100vh;
     background-color: $color-dark;
     background: linear-gradient($color-blue 0%, $color-dark 50%);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5vh 0 25vh 0;
-    // padding-bottom: 10vh;
-    // margin-top: -10vh;
 
     .skills-section-container {
       min-height: 80%;
@@ -30,13 +27,9 @@
         grid-gap: 1px;
         padding: 0;
         list-style: none;
-        // height: 100%;
-        // position: absolute;
         top: 0;
         margin: auto;
-        // height: 100%;
         width: 100%;
-        // background-color: $color-white;
         border-radius: 60px;
         z-index: 1;
 
@@ -48,7 +41,6 @@
           text-align: justify;
           padding: 20px 0;
           z-index: 1;
-          // position: relative;
 
           .skills-item-container {
             display: grid;
@@ -56,7 +48,6 @@
             grid-gap: 40px;
             height: 100%;
             width: 60%;
-            // min-width: 250px;
             margin: auto;
             padding-bottom: 30px;
             position: relative;
@@ -89,15 +80,6 @@
                 line-height: 1.75;
               }
             }
-
-            // .skills-item-badges {
-            //   position: absolute;
-            //   // top: 100%;
-            //   width: 100%;
-            //   overflow: hidden;
-            //   cursor: grab;
-            //   // border-radius: 100px;
-            // }
           }
         }
       }

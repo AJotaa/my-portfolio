@@ -2,12 +2,16 @@
 @import "variables";
 @import "default";
 
+// Pages
 // HomePage
 @import "./home_page/hero_section";
 @import "./home_page/skills_section";
 @import "./home_page/projects_section";
 @import "./home_page/experience_section";
 @import "./home_page/contact_section";
+
+// NotFoundPage
+@import "not_found_page";
 
 //Layout
 @import "./layout/the_header";

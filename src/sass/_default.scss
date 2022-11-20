@@ -52,6 +52,30 @@ code {
   }
 }
 
+@keyframes up-and-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes rotate-rot {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .container {
     width: 90vw;

@@ -43,6 +43,28 @@ code {
   opacity: 1 !important;
 }
 
+@keyframes up-and-down {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes rotate-rot {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
 @media screen and (max-width: 900px) {
   .container {
     width: 90vw;
@@ -110,17 +132,6 @@ code {
     visibility: visible;
     opacity: 1;
   }
-  @keyframes up-and-down {
-    0% {
-      transform: translateY(-15px);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    100% {
-      transform: translateY(-15px);
-    }
-  }
 }
 @media screen and (min-width: 701px) and (max-width: 1500px) {
   .hero-section {
@@ -184,17 +195,6 @@ code {
     visibility: visible;
     opacity: 1;
   }
-  @keyframes up-and-down {
-    0% {
-      transform: translateY(-15px);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    100% {
-      transform: translateY(-15px);
-    }
-  }
 }
 @media screen and (min-width: 1501px) {
   .hero-section {
@@ -257,17 +257,6 @@ code {
   .hero-section .visible {
     visibility: visible;
     opacity: 1;
-  }
-  @keyframes up-and-down {
-    0% {
-      transform: translateY(-15px);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-    100% {
-      transform: translateY(-15px);
-    }
   }
 }
 @media screen and (max-width: 700px) {
@@ -1357,6 +1346,140 @@ code {
     background-color: #fff;
   }
 }
+@media screen and (max-width: 700px) {
+  .not-found-page {
+    background: linear-gradient(90deg, #126464, #fc5c65);
+  }
+  .not-found-page .not-found-container {
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .not-found-page .not-found-container .not-found-card-content {
+    width: 80%;
+    margin: auto;
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-title-container {
+    margin-bottom: 20px;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-title-container .not-found-title {
+    font-size: 2rem;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para {
+    font-size: 1rem;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para a {
+    color: #fc5c65;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para a:hover {
+    color: #126464;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-icon i {
+    font-size: 7rem;
+    animation-name: rotate-rot;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  .not-found-page {
+    background: linear-gradient(180deg, #126464, #fc5c65);
+  }
+  .not-found-page .not-found-container .not-found-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  .not-found-page {
+    background: linear-gradient(90deg, #126464, #fc5c65);
+  }
+  .not-found-page .not-found-container {
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .not-found-page .not-found-container .not-found-card-content {
+    width: 80%;
+    margin: auto;
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-title-container {
+    margin-bottom: 20px;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-title-container .not-found-title {
+    font-size: 3rem;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para {
+    font-size: 1.5rem;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para a {
+    color: #fc5c65;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para a:hover {
+    color: #126464;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-icon i {
+    font-size: 7rem;
+    animation-name: rotate-rot;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+}
+@media screen and (min-width: 1501px) {
+  .not-found-page {
+    background: linear-gradient(90deg, #126464, #fc5c65);
+  }
+  .not-found-page .not-found-container {
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .not-found-page .not-found-container .not-found-card-content {
+    width: 80%;
+    margin: auto;
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-title-container {
+    margin-bottom: 20px;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-title-container .not-found-title {
+    font-size: 4rem;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para {
+    font-size: 2rem;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para a {
+    color: #fc5c65;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-para-container .not-found-para a:hover {
+    color: #126464;
+  }
+  .not-found-page .not-found-container .not-found-card-content .not-found-icon i {
+    font-size: 7rem;
+    animation-name: rotate-rot;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+}
 #the-header-mobile {
   display: none;
   position: fixed;
@@ -1908,6 +2031,7 @@ code {
   transition: height 0.5s;
   padding: 50px 0;
   position: relative;
+  z-index: 1;
 }
 .base-card-container .base-card-decoration {
   position: absolute;
@@ -1916,7 +2040,7 @@ code {
   top: 50px;
   left: 50px;
   background-color: #126464;
-  z-index: -1;
+  z-index: 0;
   border-radius: 50px;
   box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.2);
 }

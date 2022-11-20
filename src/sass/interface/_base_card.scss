@@ -13,6 +13,7 @@
     transition: height 0.5s;
     padding: 50px 0;
     position: relative;
+    z-index: 1;
   }
 
   .base-card-decoration {
@@ -22,7 +23,7 @@
     top: 50px;
     left: 50px;
     background-color: $color-blue;
-    z-index: -1;
+    z-index: 0;
     border-radius: 50px;
     box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.2);
   }

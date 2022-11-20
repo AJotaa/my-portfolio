@@ -1,0 +1,79 @@
+@mixin notFound($font-l, $font-xl, $layout-height) {
+  .not-found-page {
+    background: linear-gradient(90deg, $color-blue, $color-red);
+
+    .not-found-container {
+      height: calc(100vh - $layout-height);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .not-found-card-content {
+        width: 80%;
+        margin: auto;
+        min-height: 40vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        align-items: center;
+
+        .not-found-title-container {
+          margin-bottom: 20px;
+
+          .not-found-title {
+            font-size: $font-xl;
+          }
+        }
+
+        .not-found-para-container {
+          .not-found-para {
+            font-size: $font-l;
+
+            a {
+              color: $color-red;
+            }
+
+            a:hover {
+              color: $color-blue;
+            }
+          }
+        }
+
+        .not-found-icon {
+          i {
+            font-size: 7rem;
+            animation-name: rotate-rot;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  @include notFound($font-l: 1rem, $font-xl: 2rem, $layout-height: 4rem);
+
+  .not-found-page {
+    background: linear-gradient(180deg, $color-blue, $color-red);
+
+    .not-found-container {
+      .not-found-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  @include notFound($font-l: 1.5rem, $font-xl: 3rem, $layout-height: 4rem);
+}
+
+@media screen and (min-width: 1501px) {
+  @include notFound($font-l: 2rem, $font-xl: 4rem, $layout-height: 6rem);
+}
