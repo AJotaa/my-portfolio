@@ -1171,7 +1171,8 @@ code {
     background-color: #fff;
   }
   .contact-section {
-    min-height: calc(100vh - 4rem);
+    height: calc(100vh - 4rem);
+    min-height: 750px;
     background: linear-gradient(180deg, #126464, #fc5c65);
     display: flex;
   }
@@ -1180,7 +1181,7 @@ code {
     flex-direction: column;
     justify-content: space-evenly;
     grid-gap: 0px;
-    height: 85vh;
+    height: 90%;
     margin-bottom: 0;
   }
   .contact-section .contact-section-container .contact-half-container {
