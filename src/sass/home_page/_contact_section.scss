@@ -1,6 +1,9 @@
 @mixin contact($font-xl, $font-xxl, $layout-height) {
   .contact-section {
-    height: calc(100vh - ($layout-height * 2));
+    display: flex;
+    padding: 20px 0;
+    height: auto;
+    min-height: calc(100vh - ($layout-height * 2));
     color: $color-white;
     background: linear-gradient(90deg, $color-blue, $color-red);
     position: relative;
@@ -8,7 +11,7 @@
     .contact-section-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 50px;
+      grid-gap: 60px;
       height: 100%;
 
       .contact-half-container {
@@ -92,16 +95,14 @@
   @include contact($font-xl: 2rem, $font-xxl: 3rem, $layout-height: 4rem);
 
   .contact-section {
-    height: calc(100vh - $layout-height);
-    min-height: 750px;
+    min-height: calc(100vh - $layout-height);
     background: linear-gradient(180deg, $color-blue, $color-red);
-    display: flex;
 
     .contact-section-container {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      grid-gap: 0px;
+      grid-gap: 20px;
       height: 90%;
       margin-bottom: 0;
 

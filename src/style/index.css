@@ -1100,7 +1100,10 @@ code {
 }
 @media screen and (max-width: 700px) {
   .contact-section {
-    height: calc(100vh - 8rem);
+    display: flex;
+    padding: 20px 0;
+    height: auto;
+    min-height: calc(100vh - 8rem);
     color: #fff;
     background: linear-gradient(90deg, #126464, #fc5c65);
     position: relative;
@@ -1108,7 +1111,7 @@ code {
   .contact-section .contact-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 60px;
     height: 100%;
   }
   .contact-section .contact-section-container .contact-half-container {
@@ -1171,16 +1174,14 @@ code {
     background-color: #fff;
   }
   .contact-section {
-    height: calc(100vh - 4rem);
-    min-height: 750px;
+    min-height: calc(100vh - 4rem);
     background: linear-gradient(180deg, #126464, #fc5c65);
-    display: flex;
   }
   .contact-section .contact-section-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    grid-gap: 0px;
+    grid-gap: 20px;
     height: 90%;
     margin-bottom: 0;
   }
@@ -1203,7 +1204,10 @@ code {
 }
 @media screen and (min-width: 701px) and (max-width: 1500px) {
   .contact-section {
-    height: calc(100vh - 8rem);
+    display: flex;
+    padding: 20px 0;
+    height: auto;
+    min-height: calc(100vh - 8rem);
     color: #fff;
     background: linear-gradient(90deg, #126464, #fc5c65);
     position: relative;
@@ -1211,7 +1215,7 @@ code {
   .contact-section .contact-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 60px;
     height: 100%;
   }
   .contact-section .contact-section-container .contact-half-container {
@@ -1276,7 +1280,10 @@ code {
 }
 @media screen and (min-width: 1501px) {
   .contact-section {
-    height: calc(100vh - 12rem);
+    display: flex;
+    padding: 20px 0;
+    height: auto;
+    min-height: calc(100vh - 12rem);
     color: #fff;
     background: linear-gradient(90deg, #126464, #fc5c65);
     position: relative;
@@ -1284,7 +1291,7 @@ code {
   .contact-section .contact-section-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 60px;
     height: 100%;
   }
   .contact-section .contact-section-container .contact-half-container {
@@ -2620,6 +2627,7 @@ code {
   color: #1f1f1e;
   z-index: -1;
   border-radius: 0 15px 15px 0;
+  overflow: auto;
 }
 .base-dorp-list .warp-container .base-drop-list-wrap .drop-list {
   margin-top: 15vh;

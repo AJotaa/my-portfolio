@@ -23,9 +23,7 @@
       color: $color-dark;
       z-index: -1;
       border-radius: 0 15px 15px 0;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
+      overflow: auto;
 
       .drop-list {
         margin-top: 15vh;
@@ -62,11 +60,8 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        // grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
-        // flex-wrap: wrap;
         margin-left: 5vw;
-        // margin-bottom: 50px;
 
         li {
           font-size: $font-m;
