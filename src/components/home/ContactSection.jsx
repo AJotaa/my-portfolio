@@ -25,7 +25,7 @@ function ContactSection({ data }) {
         <div className="contact-content-container contact-half-container">
           <div className="contact-half">
             <div className="contact-title-text">
-              <h2 className="contact-title">Hey, get in touch.</h2>
+              <h2 className="contact-title">Hey, let's get in touch.</h2>
               <h3 className="contact-sub">Or try social</h3>
             </div>
             <div className="contact-social-list-container">
