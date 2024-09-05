@@ -122,7 +122,7 @@ class HomePage extends Component {
             tools: [
               { text: "Next.js" },
               { text: "React" },
-              { text: "Tainwind" },
+              { text: "Tailwind" },
               { text: "TypeScript" },
               { text: "NPM" },
               { text: "Vite" },
@@ -144,7 +144,7 @@ class HomePage extends Component {
               { text: "React" },
               { text: "Webpack" },
               { text: "Sass" },
-              { text: "Tainwind" },
+              { text: "Tailwind" },
               { text: "JavaScript" },
               { text: "NPM" },
               { text: "Github" },
