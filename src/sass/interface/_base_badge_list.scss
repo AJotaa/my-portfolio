@@ -18,6 +18,17 @@
       min-width: 42px;
       text-align: center;
       font-family: $font-para;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .base-badge {
+        height: fit-content;
+
+        i {
+          display: block;
+        }
+      }
     }
   }
 }

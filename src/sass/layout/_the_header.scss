@@ -94,7 +94,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  @include header($font-l: 1rem, $layout-height: 4rem);
+  @include header($font-l: 1rem, $layout-height: 3.5rem);
   #the-header {
     display: none;
   }
@@ -105,9 +105,9 @@
 }
 
 @media screen and (min-width: 701px) and (max-width: 1500px) {
-  @include header($font-l: 1.5rem, $layout-height: 4rem);
+  @include header($font-l: 1.5rem, $layout-height: 3.5rem);
 }
 
 @media screen and (min-width: 1501px) {
-  @include header($font-l: 2rem, $layout-height: 6rem);
+  @include header($font-l: 2rem, $layout-height: 4rem);
 }

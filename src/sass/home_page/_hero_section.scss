@@ -39,6 +39,10 @@
           margin: auto;
           width: 90%;
           color: $color-grey;
+
+          .hero-section-subtitle {
+            font-weight: 600;
+          }
         }
       }
     }
@@ -81,9 +85,9 @@
 }
 
 @media screen and (min-width: 701px) and (max-width: 1500px) {
-  @include hero($font-l: 1.5rem, $font-xl: 3rem, $font-xxl: 4.5rem);
+  @include hero($font-l: 1.5rem, $font-xl: 2.5rem, $font-xxl: 4rem);
 }
 
 @media screen and (min-width: 1501px) {
-  @include hero($font-l: 2rem, $font-xl: 4rem, $font-xxl: 6rem);
+  @include hero($font-l: 2rem, $font-xl: 3.5rem, $font-xxl: 5rem);
 }

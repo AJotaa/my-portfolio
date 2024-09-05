@@ -44,6 +44,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        overflow: hidden;
 
         .drop-info-more {
           color: inherit;
@@ -110,7 +111,7 @@
     }
 
     .drop-visibly {
-      height: 270px;
+      height: 300px;
       visibility: visible;
       padding: auto 30px;
       margin: 20px 0;

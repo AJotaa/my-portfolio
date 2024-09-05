@@ -92,7 +92,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  @include contact($font-xl: 2rem, $font-xxl: 3rem, $layout-height: 4rem);
+  @include contact($font-xl: 2rem, $font-xxl: 3rem, $layout-height: 3.5rem);
 
   .contact-section {
     min-height: calc(100vh - $layout-height);
@@ -134,9 +134,9 @@
 }
 
 @media screen and (min-width: 701px) and (max-width: 1500px) {
-  @include contact($font-xl: 3rem, $font-xxl: 4.5rem, $layout-height: 4rem);
+  @include contact($font-xl: 3rem, $font-xxl: 4.5rem, $layout-height: 3.5rem);
 }
 
 @media screen and (min-width: 1501px) {
-  @include contact($font-xl: 4rem, $font-xxl: 6rem, $layout-height: 6rem);
+  @include contact($font-xl: 4rem, $font-xxl: 6rem, $layout-height: 4rem);
 }

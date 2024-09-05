@@ -13,6 +13,8 @@ import imgCalculator from "../img/projects/calculator.png";
 import imgAtrolle from "../img/projects/astrolle.png";
 import imgQuiz from "../img/projects/country-quiz.png";
 import imgExp1 from "../img/experience/agrimanager.png";
+import imgExp2 from "../img/experience/astrolle.svg";
+import imgExp3 from "../img/experience/neosmart.jpeg";
 
 class HomePage extends Component {
   constructor(props) {
@@ -109,13 +111,54 @@ class HomePage extends Component {
         ],
         experience: [
           {
+            name: "Neosmart",
+            charge: "Frontend Developer",
+            dateStart: "2024",
+            dateEnd: null,
+            location: "Madrid, España",
+            text: `Responsible for developing engaging interfaces, including a landing page and an application that serves as a prompt library with integration of LLMs. Additionally a browser extension to optimize prompt usage.`,
+            linkShow: "neoprompts.ai",
+            link: "https://neoprompts.ai/",
+            tools: [
+              { text: "Next.js" },
+              { text: "React" },
+              { text: "Tainwind" },
+              { text: "TypeScript" },
+              { text: "NPM" },
+              { text: "Vite" },
+              { text: "Github" },
+              { text: "Notion" },
+            ],
+            img: imgExp3,
+          },
+          {
+            name: "Astrolle",
+            charge: "Frontend Developer",
+            dateStart: "2021",
+            dateEnd: "2024",
+            location: "Miami, USA",
+            text: `Responsible for creating dynamic and engaging interfaces using React and related technologies. Focused on optimizing user experience and ensuring smooth functionality in every project.`,
+            linkShow: "astrolle.com",
+            link: "https://astrolle.com/",
+            tools: [
+              { text: "React" },
+              { text: "Webpack" },
+              { text: "Sass" },
+              { text: "Tainwind" },
+              { text: "JavaScript" },
+              { text: "NPM" },
+              { text: "Github" },
+              { text: "Jira" },
+            ],
+            img: imgExp2,
+          },
+          {
             name: "Agrimanager",
             charge: "Business analyst",
             dateStart: "2020",
-            dateEnd: null,
+            dateEnd: "2024",
             location: "Medellín, Colombia",
-            text: `Part of the group in charge of database administration (along with its support and management).
-            Delegate for the creation of reports and tables of processed data.`,
+            text: `Responsible for analyzing and managing data to drive informed decisions and effective strategies. With experience in advanced queries and data analysis, my goal is to extract valuable insights.`,
             linkShow: "agrimanager.app",
             link: "https://www.agrimanager.app/",
             tools: [
